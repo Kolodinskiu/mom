@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>momentum</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- player -->
+      <button class="icon music-btn"></button>
+      <div class="player">
+        <div class="player-controls">
+          <div class="player-control">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+          </div>
+          <div class="current-song-wrapper">
+            <p class="current-song"></p>
+            <div class="player-control timer-player-control">
+              <input
+                class="progress progress-audio"
+                type="range"
+                value="0"
+                min="0"
+                max="100"
+                step="1"
+              />
+              <span class="timer-current-time">0:00</span> /
+              <span class="timer-duration-time">0:00</span>
+            </div>
+          </div>
+
+          <div class="player-control volume-player-control">
+            <button class="volume player-icon"></button>
+            <input
+              class="progress progress-volume"
+              type="range"
+              value="50"
+              min="0"
+              max="100"
+              step="1"
+            />
+          </div>
+        </div>
+        <ul class="play-list"></ul>
+      </div>
+      <!-- /player -->
+      <!-- weather -->
+      <button class="icon weather-btn"></button>
+      <div class="weather">
+        <input type="text" class="city" placeholder="Enter city..." />
+        <i class="weather-icon owf"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+      <!-- /weather -->
+    </header>
+    <!-- /header -->
+    <main>
+      <div class="main">
+        <div class="slider-icons">
+          <button class="slide-prev slider-icon"></button>
+          <button class="slide-next slider-icon"></button>
+        </div>
+        <p class="time"></p>
+        <p class="date"></p>
+        <div class="greeting-container">
+          <span class="greeting"></span>
+          <input class="name" type="text" placeholder="[Enter name]" />
+        </div>
+      </div>
+      <!-- quote -->
+      <div class="quote-wrap">
+        <button class="change-quote"></button>
+        <div>
+          <div class="quote"></div>
+          <div class="author"></div>
+        </div>
+      </div>
+      <!-- /quote -->
+      <!-- todo -->
+      <div class="todo">
+        <button class="icon todo-btn"></button>
+        <div class="todo-wrap invisible">
+          <div class="add-todo">
+            <input
+              class="add-todo-input"
+              type="text"
+              id="todoInput"
+              placeholder="Enter todo..."
+            />
+          </div>
+          <ul class="todo-list"></ul>
+        </div>
+      </div>
+      <!-- /todo -->
+      <!-- settings -->
+      <div class="settings">
+        <button class="icon settings-btn"></button>
+        <ul class="settings-list invisible">
+          <li class="settings-item lang">
+            Language:
+            <label for="lang-en" class="settings-item-wrap lang-wrap"
+              >en
+              <input
+                id="lang-en"
+                class="hide-default-input"
+                type="radio"
+                checked="checked"
+                name="lang"
+                value="en" /><span class="checkmark"></span
+            ></label>
+            <label for="lang-ru" class="settings-item-wrap lang-wrap"
+              >ru
+              <input
+                id="lang-ru"
+                class="hide-default-input"
+                type="radio"
+                name="lang"
+                value="ru" /><span class="checkmark"></span
+            ></label>
+          </li>
+          <li class="settings-item image-src">
+            Image source:
+            <div class="settings-item-wrap">
+              <label for="source-github">Github</label>
+              <input
+                id="source-github"
+                class="hide-default-input github-src"
+                type="radio"
+                checked="checked"
+                name="image-src"
+                value="github"
+              /><span class="checkmark"></span>
+            </div>
+            <div class="settings-item-wrap image-src-wrap">
+              <label for="source-unsplash">Unsplash</label>
+              <input
+                id="source-unsplash"
+                class="hide-default-input"
+                type="radio"
+                name="image-src"
+                value="unsplash"
+              /><span class="checkmark"></span>
+              <input
+                class="unsplash input image-src-input"
+                type="text"
+                placeholder="Enter tag..."
+              />
+            </div>
+            <div class="settings-item-wrap image-src-wrap">
+              <label for="source-flickr">Flickr</label>
+              <input
+                id="source-flickr"
+                class="hide-default-input"
+                type="radio"
+                name="image-src"
+                value="flickr"
+              /><span class="checkmark checkmark-flickr"></span>
+              <input
+                class="flickr input image-src-input"
+                type="text"
+                placeholder="Enter tag..."
+              />
+            </div>
+          </li>
+          <li class="settings-item show">
+            Show:
+            <label for="show-time" class="settings-item-wrap show-wrap"
+              >time
+              <input
+                id="show-time"
+                class="hide-default-input"
+                type="checkbox"
+                checked="checked"
+                name="time"
+                value="0" /><span class="checkmark"></span
+            ></label>
+            <label for="show-date" class="settings-item-wrap show-wrap"
+              >date
+              <input
+                id="show-date"
+                class="hide-default-input"
+                type="checkbox"
+                checked="checked"
+                name="date"
+                value="1" /><span class="checkmark"></span
+            ></label>
+            <label for="show-weather" class="settings-item-wrap show-wrap"
+              >weather
+              <input
+                id="show-weather"
+                class="hide-default-input"
+                type="checkbox"
+                checked="checked"
+                name="weather"
+                value="2" /><span class="checkmark"></span
+            ></label>
+            <label for="show-audio" class="settings-item-wrap show-wrap"
+              >audio
+              <input
+                id="show-audio"
+                class="hide-default-input"
+                type="checkbox"
+                checked="checked"
+                name="audio"
+                value="3" /><span class="checkmark"></span
+            ></label>
+            <label for="show-quotes" class="settings-item-wrap show-wrap"
+              >quotes
+              <input
+                id="show-quotes"
+                class="hide-default-input"
+                type="checkbox"
+                checked="checked"
+                name="quotes"
+                value="4" /><span class="checkmark"></span
+            ></label>
+            <label for="show-todos" class="settings-item-wrap show-wrap"
+              >todos
+              <input
+                id="show-todos"
+                class="hide-default-input"
+                type="checkbox"
+                checked="checked"
+                name="todos"
+                value="5" /><span class="checkmark"></span
+            ></label>
+            <label for="show-greeting" class="settings-item-wrap show-wrap"
+              >greeting
+              <input
+                id="show-greeting"
+                class="hide-default-input"
+                type="checkbox"
+                checked="checked"
+                name="greeting"
+                value="6" /><span class="checkmark"></span
+            ></label>
+          </li>
+        </ul>
+      </div>
+      <!-- /settings -->
+    </main>
+    
+
+    <!-- scripts -->
+    <script src="js/constants.js"></script>
+    <script src="data/defaultData.js"></script>
+    <script src="data/greeting.js"></script>
+    <script src="data/settings.js"></script>
+    <script src="js/getRandomNum.js"></script>
+    <script src="js/initSettings.js"></script>
+    <script src="js/setTime.js"></script>
+    <script src="js/setDate.js"></script>
+    <script src="js/setGreeting.js"></script>
+    <script src="js/setBgImage.js"></script>
+    <script src="js/getWeather.js"></script>
+    <script src="js/getQuote.js"></script>
+    <script type="module" src="js/audioPlayer.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/closeOpenPopups.js"></script>
+    <script type="module" src="js/translate.js"></script>
+    <script type="module" src="js/changeSettings.js"></script>
+    <script type="module" src="js/saveDataInLocalStorage.js"></script>
+    <script src="js/showData.js"></script>
+  </body>
+</html>

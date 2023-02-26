@@ -1,0 +1,52 @@
+[
+    {
+      "text": {
+        "ru": "Пишите код так, как будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете",
+        "en": "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."
+      },
+      "author": { "ru": "Стивен Макконнелл", "en": "Steven McConnell" }
+    },
+    {
+      "text": {
+        "ru": "Многие из вас знакомы с достоинствами программиста. Их всего три, и разумеется это: лень, нетерпеливость и гордыня.",
+        "en": "Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris"
+      },
+      "author": { "ru": "Ларри Уолл", "en": "Larry Wall" }
+    },
+    {
+      "text": {
+        "ru": "«Си» позволяет очень просто выстрелить себе в ногу. На «Си++» сделать это сложнее, но, когда вам это удается, ногу отрывает полностью.",
+        "en": "C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do, it blows away your whole leg."
+      },
+      "author": { "ru": "Бьерн Страуструп", "en": "Bjarne Stroustrup" }
+    },
+    {
+      "text": {
+        "ru": "Изучение программирования имеет такое же отношение к проектированию интерактивных систем, как обучение слепой печати к написанию стихов.",
+        "en": "Learning to program has no more to do with designing interactive software than learning to touch type has to do with writing poetry"
+      },
+      "author": { "ru": "Тед Нельсон", "en": "Ted Nelson" }
+    },
+    {
+      "text": {
+        "ru": "Меня не интересует, будет ли это работать на ваших машинах! Мы не отдаем их заказчику!",
+        "en": "I don't care if it works on your machine! We are not shipping your machine!"
+      },
+      "author": { "ru": "Видиу Платон", "en": "Vidiu Platon" }
+    },
+    {
+      "text": {
+        "ru": "Сначала учите науку программирования и всю теорию. Далее выработаете свой программистский стиль. Затем забудьте все и просто программируйте.",
+        "en": "First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack."
+      },
+      "author": { "ru": "Джордж Карретт", "en": "George Carrette" }
+    },
+    {
+      "text": {
+        "ru": "Большинство хороших программистов делают свою работу не потому, что ожидают оплаты или признания, а потому что получают удовольствие от программирования.",
+        "en": "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program."
+      },
+      "author": { "ru": "Линус Торвальдс ", "en": "Linus Torvalds" }
+    }
+  ]
+  
